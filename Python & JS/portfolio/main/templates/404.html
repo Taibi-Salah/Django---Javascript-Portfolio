@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block title %}Page Not Found{% endblock %}
+{% block content %}
+<div style="text-align: center; padding: 50px;">
+  <h1>Oops! Page Not Found</h1>
+  <p>It seems you've hit a dead end. Let's get you back on track!</p>
+  <img src="{% static 'images/funny-404.png' %}" alt="Funny 404" style="width: 300px;">
+  <br>
+  <a href="{% url 'home' %}" style="margin-top: 20px; display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; border-radius: 5px; text-decoration: none;">Go Home</a>
+</div>
+{% endblock %}
